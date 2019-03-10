@@ -11,6 +11,7 @@ import { LayoutResumeComponent } from './layout-resume/layout-resume.component';
 import { CarouselComponent } from './layout-home/carousel/carousel.component';
 import { BlogContainerComponent } from './layout-home/blog-container/blog-container.component';
 import { WidgetComponent } from './layout-home/widget/widget.component';
+import { BlogCardComponent } from './layout-home/blog-card/blog-card.component';
 
 
 
@@ -27,7 +28,8 @@ import { WidgetComponent } from './layout-home/widget/widget.component';
     LayoutResumeComponent,
     CarouselComponent,
     BlogContainerComponent,
-    WidgetComponent
+    WidgetComponent,
+    BlogCardComponent
   ],
   imports: [
     CommonModule
