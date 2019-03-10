@@ -1,0 +1,49 @@
+div {
+  div {
+    div {
+      p#web-title {
+        width: 100%;
+        font-family: 'Pacifico', sans-serif;
+        font-size: 16px;
+        font-size: calc(2vw + 1vmin);
+        color: rgba(174, 25, 204, 0.795);
+      }
+    }
+
+    div {
+      ul {
+        li.nav-item {
+          a.nav-link {
+            color: black;
+
+            &:hover {
+              text-decoration: none;
+              background-color: yellow;
+            }
+
+            &:focus {
+              text-decoration: none;
+              background-color: yellow;
+            }
+          }
+
+          a.active {
+            color: yellow;
+
+            &:hover {
+              color: green;
+              text-decoration: none;
+              background-color: yellow;
+            }
+
+            &:focus {
+              color: green;
+              text-decoration: none;
+              background-color: yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

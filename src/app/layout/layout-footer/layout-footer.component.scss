@@ -1,0 +1,38 @@
+footer.bg-main-dark {
+  background-color: #1C2331;
+
+  div.bg-info {
+    div.container {
+      div {
+        div.media-log-area {
+          background-color: aliceblue;
+
+          a {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+footer .bg-copyright {
+  background-color: rgb(0, 0, 0);
+}
+
+footer div #web-addr {
+  font-family: 'Pacifico', sans-serif;
+  color: rgba(174, 25, 204, 0.795);
+}
+
+footer div>p#confession {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+footer div div #connect-warn {
+  font-family: 'Handlee', cursive;
+  font-size: 2rem;
+  color: black;
+}
