@@ -1,4 +1,12 @@
-<app-blog-card></app-blog-card>
-<app-blog-card></app-blog-card>
-<app-blog-card></app-blog-card>
-<app-blog-card></app-blog-card>
+<div class="container">
+  <div class="row">
+    <div class="col col-md-8">
+      <div class="" *ngFor="let blogCard of blogHeaders">
+        <app-blog-card [blogCard]="blogCard"></app-blog-card>
+      </div>
+    </div>
+    <div class="col col-md-4">
+      <app-widget></app-widget>
+    </div>
+  </div>
+</div>

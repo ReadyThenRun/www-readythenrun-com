@@ -8,10 +8,10 @@ import { LayoutWebappComponent } from './layout-webapp/layout-webapp.component';
 import { LayoutMachinelearningComponent } from './layout-machinelearning/layout-machinelearning.component';
 import { LayoutComputerversionComponent } from './layout-computerversion/layout-computerversion.component';
 import { LayoutResumeComponent } from './layout-resume/layout-resume.component';
-import { CarouselComponent } from './layout-home/carousel/carousel.component';
 import { BlogContainerComponent } from './layout-home/blog-container/blog-container.component';
 import { WidgetComponent } from './layout-home/widget/widget.component';
 import { BlogCardComponent } from './layout-home/blog-card/blog-card.component';
+
 
 
 
@@ -26,13 +26,12 @@ import { BlogCardComponent } from './layout-home/blog-card/blog-card.component';
     LayoutMachinelearningComponent,
     LayoutComputerversionComponent,
     LayoutResumeComponent,
-    CarouselComponent,
     BlogContainerComponent,
     WidgetComponent,
     BlogCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     LayoutFooterComponent,
