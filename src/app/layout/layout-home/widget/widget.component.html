@@ -1,4 +1,6 @@
 <hr class="dashed">
+
+<!-- keyword area -->
 <h4>Keywords</h4>
 <button type="button" class="btn btn-outline-primary">Primary</button>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -9,25 +11,38 @@
 <button type="button" class="btn btn-outline-light">Light</button>
 <button type="button" class="btn btn-outline-dark">Dark</button>
 <hr class="dashed">
+
+<!-- Related Posts area -->
 <h4>Related Posts</h4>
 <div style="list-style-type:none; list-style-position: inside" *ngFor="let title of relatedPosts">
   <p>{{title}}</p>
 </div>
 <hr class="dashed red">
+<!-- Recent Posts area -->
 <h4>Recent Posts</h4>
 <div style="list-style-type:none; list-style-position: inside" *ngFor="let title of recentPosts">
   <p class="recent-post"><i>{{title}}</i></p>
 </div>
 <hr class="dashed">
-<div class="dropdown mr-1">
-  <button type="button" class="btn btn-outline-dark dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown"
-    aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-    Archive
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
+
+<!-- archive area -->
+<button type="button" id="archive" class="btn-outline-dark" (click)="toggleBlogList($event)">Archive</button>
+<ul class="nav-month">
+  <li class="nav-month-item">
+    <button (click)="toggleBlogList($event)">March, 2019</button>
+    <ul class="nav-blog">
+      <li class="nav-blog-item"><a href=#>
+          <p><i class="fas fa-file-alt"></i> there is a very long long long long posted blog</p>
+        </a></li>
+    </ul>
+  </li>
+  <li class="nav-month-item">
+    <button (click)="toggleBlogList($event)">Feb. 2019</button>
+    <ul class="nav-blog">
+      <li class="nav-blog-item"><a href=#>
+          <p><i class="fas fa-file-alt"></i> there is a very long long long long posted blog</p>
+        </a></li>
+    </ul>
+  </li>
+</ul>
 <hr>

@@ -19,6 +19,18 @@ export class WidgetComponent implements OnInit {
     ];
   }
 
+  toggleBlogList($event) {
+    let eles: Array<any>;
+    eles = $event.target.nextSibling.children;
+    for (let item of eles) {
+      if (item.style.display == '') {
+        item.style.display = 'block';
+      } else {
+        item.style.display = '';
+      }
+    }
+  }
+
   ngOnInit() {
   }
 

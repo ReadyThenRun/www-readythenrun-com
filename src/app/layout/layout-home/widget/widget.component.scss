@@ -5,3 +5,32 @@ hr.dashed {
 hr.red {
   border-top: 3px dashed red;
 }
+
+li.nav-blog-item {
+  display: none;
+}
+
+button#archive {
+  width: 10rem;
+}
+
+ul.nav-month {
+  list-style-type: none;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: none;
+
+    button {
+      width: 10em;
+      border-color: white;
+    }
+
+    ul {
+      li {
+        display: one;
+      }
+    }
+  }
+}

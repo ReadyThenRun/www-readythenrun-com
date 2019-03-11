@@ -6,6 +6,8 @@ export class BlogCard {
   keywords: string[];
   summary: string;
   articleUrl: string;
+  const MONTH: string[] = ['January', 'February', 'March', 'April', 'May',
+    'June', 'July', 'Auguest', 'September', 'October', 'November', 'December'];
 
   constructor() {
     this.title = '';
@@ -37,6 +39,13 @@ export class BlogCard {
   }
   setArticleUrl(url: string) {
     this.articleUrl = url;
+  }
+
+  getDateString() {
+    // tslint:disable-next-line:max-line-length
+    const dtstring = '' + this.MONTH[this.publishDate.getMonth()] + ' ' +
+      this.publishDate.getDate() + ', ' + this.publishDate.getFullYear();
+    return dtstring;
   }
 
 

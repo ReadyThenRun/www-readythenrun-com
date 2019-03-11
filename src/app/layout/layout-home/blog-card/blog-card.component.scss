@@ -1,7 +1,29 @@
 div.card {
   border: none;
+
+  div.card-body {
+    h3 {}
+
+    p span#post-date {
+      display: inline-block;
+      width: 20rem;
+    }
+
+    p button.keyword {
+      border-color: yellow;
+      border-width: 2px;
+      min-width: 5rem;
+      color: white;
+      border-bottom-width: 4px;
+      background-image: url("/assets/images/element/green.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0px;
+    }
+
+  }
 }
 
 hr.card_seg {
-  border-top: 2px dashed green;
+  border-top: 1px dashed green;
 }

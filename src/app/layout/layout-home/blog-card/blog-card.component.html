@@ -2,7 +2,19 @@
   <div class="card-body">
     <h3 class="card-title">{{blogCard.title}}</h3>
     <!-- detail -->
-    <p><span>{{blogCard.publishDate}}</span> <span>{{blogCard.keywords}}</span></p>
+    <p>
+      <span id="post-date">
+        <i class="far fa-calendar-alt">
+        </i>{{' '+ blogCard.getDateString()}}
+      </span>
+      <span>
+        <i class="fas fa-angle-double-right">
+        </i>
+        <span *ngFor="let word of blogCard.keywords">
+          <button class="keyword"><img>{{word}}</button>
+        </span>
+      </span>
+    </p>
     <p class="card-text">{{blogCard.summary}}</p>
     <a href="blogCard.articalUlr" class="btn btn-outline-success">Continue reading</a>
   </div>
