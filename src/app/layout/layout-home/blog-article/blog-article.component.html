@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-md-8">
+      <div>
+        <app-blog-card [blogCard]="blogCard"></app-blog-card>
+      </div>
+      <div>
+        <article>{{ blogContent }}</article>
+      </div>
+    </div>
+    <div class="col col-md-4">
+      <app-blog-nav-sidebar [blogId]="blogCard.id" >
+      </app-blog-nav-sidebar>
+    </div>
+  </div>
+</div>

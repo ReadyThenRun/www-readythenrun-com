@@ -11,6 +11,9 @@ import { LayoutResumeComponent } from './layout-resume/layout-resume.component';
 import { BlogContainerComponent } from './layout-home/blog-container/blog-container.component';
 import { WidgetComponent } from './layout-home/widget/widget.component';
 import { BlogCardComponent } from './layout-home/blog-card/blog-card.component';
+import { BlogArticleComponent } from './layout-home/blog-article/blog-article.component';
+import { BlogNavSidebarComponent } from './layout-home/blog-nav-sidebar/blog-nav-sidebar.component';
+
 
 
 
@@ -28,7 +31,9 @@ import { BlogCardComponent } from './layout-home/blog-card/blog-card.component';
     LayoutResumeComponent,
     BlogContainerComponent,
     WidgetComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    BlogArticleComponent,
+    BlogNavSidebarComponent
   ],
   imports: [
     CommonModule,

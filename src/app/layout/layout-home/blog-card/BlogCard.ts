@@ -1,12 +1,13 @@
 
 
 export class BlogCard {
+  id: string;
   title: string;
   publishDate: Date;
   keywords: string[];
   summary: string;
   articleUrl: string;
-  const MONTH: string[] = ['January', 'February', 'March', 'April', 'May',
+  MONTH: string[] = ['January', 'February', 'March', 'April', 'May',
     'June', 'July', 'Auguest', 'September', 'October', 'November', 'December'];
 
   constructor() {
